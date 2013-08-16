@@ -1,0 +1,177 @@
+@CHARSET "UTF-8";
+*{
+	margin:0px;
+	padding:0px;
+	font-family:Sans,"Luxi Sans",serif,sans-serif;
+	font-size:16px;
+	
+}
+
+
+body {
+   background-color: #222222;
+}
+
+h1{
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	margin:15px auto;
+
+}
+
+
+#container{
+	width:1300px;
+	height:900px;
+	background-color:#000000;
+	margin:0px auto;
+	
+}
+
+
+#head_area{
+	
+	height:220px;
+	background-color:#111111;
+
+	margin:0px auto;
+	
+}
+#banner{
+	
+	height:164px;
+	background-color:#444444;
+	background-image:url(../img/home/banner.jpg);
+	margin:0px auto;
+	
+}
+#navigator{
+	height:56px;
+	background-color:#000000;
+	padding:0px 0px 0px 200px;
+	
+}
+.white_line{
+	
+	height:16px;
+	background-color:#ffffff;
+
+	margin:0px auto;
+	
+}
+
+.navi_tab_div{
+	font-weight:bold;
+	font-size:25px;
+	text-align:center;
+	font-variant:small-caps;
+	color:white;
+
+   	margin-left: 2.5%;
+   	margin-right: 2.5%;
+
+	padding:5px;
+	background-color:black;
+	float:left
+}
+#bottom_area{
+	
+	height:90px;
+	background-color:#444444;
+	background-image:url(../img/home/bottom.jpg);
+	margin:0px auto;
+
+}
+
+
+#left_area{
+	width:200px;
+	height:550px;
+	background-color:#444444;
+	background-image:url(../img/home/left.jpg);
+	margin:0px auto;
+	float:left
+}
+
+#right_area{
+	width:200px;
+	height:550px;
+	background-color:#444444;
+	background-image:url(../img/home/right.jpg);
+	margin:0px auto;
+	float:right
+}
+
+#center_area{
+
+	height:550px;
+	width:880px;
+	background-color:#000000;
+	margin:0px 0px 0px 210px;
+
+}
+
+
+
+#home_centertext_area{
+	margin:0px auto;
+	background-color:black;
+	padding:20px 0px 0px 4px;
+}
+
+.home_text_p{
+	font-size:18px;
+	text-align:left;
+	font-variant:small-caps;
+	color:white;
+	margin:5px auto;
+	padding:5px;
+	background-color:black;
+}
+
+
+
+
+
+.menu{
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+	margin:0px auto;
+
+}
+
+#links{
+	width:80px;
+	margin:10px auto;
+	padding:10px;
+	
+}
+
+#textList{
+	margin:10px;
+	padding:20px;
+	
+}
+#ladybug{
+
+
+	float:right;
+	margin-right:20px;
+	margin-left:20px;
+}
+div.forClean{
+	clear:both;
+}
+.context{
+	width:600px;
+	padding:10px 10px;
+	float:left;
+	background-color:#ffffff;
+	
+
+}
+
+
+

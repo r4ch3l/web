@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+
+	<package name="webpage"  namespace="/" extends="struts-default">
+		<action name="home" >
+			<result name="success" >/homePage.jsp</result>
+		</action>
+	
+		<action name="about_us"  class="action.LoadAboutUsAction" method="execute">
+			<result name="success" >/about_usPage.jsp</result>
+		</action>
+		<action name="offices"  class="action.LoadOfficesAction" method="execute">
+			<result name="success" >/about_usPage.jsp</result>
+		</action>
+		<action name="business_relation"  class="action.LoadBusinessRelationAction" method="execute">
+			<result name="success" >/about_usPage.jsp</result>
+		</action>
+		<action name="our_group"  class="action.LoadOurGroupAction" method="execute">
+			<result name="success" >/about_usPage.jsp</result>
+		</action>
+		<action name="uploadPage" >
+			<result name="success" >/uploadPage.jsp</result>
+		</action>
+		<action name="login" class="action.user.LoginAction" method="execute">
+			
+			<result name="success" >/uploadPage.jsp</result>
+			<result name="fail"  >/loginPage.jsp</result>
+		</action>
+		
+		<action name="homeUpload" class="action.user.HomeFileUploadAction" >
+			<result>/uploadPage.jsp</result>
+
+		</action>
+		<action name="aboutUsUpload" class="action.user.AboutUsFileUploadAction" >
+			<result>/uploadPage.jsp</result>
+
+		</action>
+		<action name="add" class="action.user.UpdateAboutUsAction" >
+			<result>/uploadPage.jsp</result>
+
+		</action>
+
+		
+	</package>
+ 	<package name="json" namespace="/json" extends="json-default">
+        <action name="sendfeedback" class='action.SaveFeedback' method='execute'>
+			<result type='json'>
+				<param name='feedbacksave'>ok</param>
+			</result>
+		</action>
+    </package>
+</struts>

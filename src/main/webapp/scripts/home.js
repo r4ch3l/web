@@ -1,0 +1,24 @@
+$(document).ready(function(){
+  $("tab_pirates").click(function(){
+  	location.href="pirates.html";  
+  });
+  
+    $("#tab_pirates").click(function(){
+  	window.location.href="pirates.html";  
+  });
+    $("#tab_releases").click(function(){
+  	window.location.href="releases.html";  
+  });
+    $("#tab_galerry").click(function(){
+  	window.location.href="galerry.html";  
+  });
+    $("#tab_video").click(function(){
+  	window.location.href="video.html";  
+  });
+    $("#tab_store").click(function(){
+  window.location.href="store.html";  
+  });
+      $("#tab_contact").click(function(){
+  window.location.href="contact.html";  
+  });
+});

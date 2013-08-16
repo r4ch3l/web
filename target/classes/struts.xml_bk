@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+
+
+	<include file="strutsPage.xml"/>
+	<package name="aWebsite-Default" extends="json-default">
+		
+		<!-- 定义共通的拦截器,Result和Action组件 -->
+		<global-results>
+			<result name="fail">/error.jsp</result>
+			<result name="login">/user/login_form.jsp</result>
+			<result name="index" type="redirectAction">main/index</result>
+		</global-results>
+		
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception" result="error"/>
+		</global-exception-mappings>
+	</package>
+</struts>
